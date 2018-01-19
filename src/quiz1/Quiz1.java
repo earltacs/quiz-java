@@ -15,7 +15,7 @@ public class Quiz1 {
         if(op.equalsIgnoreCase("Area") == true){area();}
         else if(op.equalsIgnoreCase("Perimeter") == true){perimeter();}
         else if(op.equalsIgnoreCase("Volume") == true){volume();}
-        else{System.exit(0);}
+        else{System.out.println("Shutting Down...");System.exit(0);}
     }
     public static void area(){
         System.out.println("Enter length of the rectangle(2 decimal places)");
@@ -23,6 +23,7 @@ public class Quiz1 {
         System.out.println("Enter width of the rectangle(2 decimal places)");
         width = in.nextDouble();
         System.out.printf("The area of the rectangle is: %.2f\n", length * width);
+        main(null);
     }
     public static void perimeter(){
         System.out.println("Enter length of the rectangle(2 decimal places)");
@@ -30,6 +31,7 @@ public class Quiz1 {
         System.out.println("Enter width of the rectangle(2 decimal places)");
         width = in.nextDouble();
         System.out.printf("The perimeter of the rectangle is: %.2f\n", (length*2)*(width*2));
+        main(null);
     }
     public static void volume(){
         System.out.println("Enter length of the rectangle(2 decimal places)");
@@ -39,5 +41,6 @@ public class Quiz1 {
         System.out.println("Enter height of the rectangle(2 deimal places)");
         height = in.nextDouble();
         System.out.printf("The volume of the rectangle : %.2f\n", length*width*height);
+        main(null);
     }
 }
